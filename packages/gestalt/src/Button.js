@@ -11,6 +11,7 @@ type Props = {|
   accessibilityLabel?: string,
   color?: 'gray' | 'red' | 'blue' | 'transparent' | 'white',
   disabled?: boolean,
+  outline?: boolean,
   inline?: boolean,
   name?: string,
   onClick?: ({ event: SyntheticMouseEvent<> }) => void,
@@ -27,6 +28,7 @@ export default function Button(props: Props) {
     color = 'gray',
     disabled = false,
     inline = false,
+    outline = false,
     name,
     onClick,
     size = 'md',
@@ -50,6 +52,7 @@ export default function Button(props: Props) {
     [styles[color]]: !disabled,
     [styles.disabled]: disabled,
     [styles.enabled]: !disabled,
+    [styles.outline]: outline,
     [styles.inline]: inline,
     [styles.block]: !inline,
   });
@@ -62,6 +65,7 @@ export default function Button(props: Props) {
       aria-label={accessibilityLabel}
       className={classes}
       disabled={disabled}
+      outline={outline}
       name={name}
       onClick={event => onClick && onClick({ event })}
       type={type}
@@ -87,6 +91,7 @@ Button.propTypes = {
   color: PropTypes.oneOf(['blue', 'gray', 'red', 'transparent', 'white']),
   disabled: PropTypes.bool,
   inline: PropTypes.bool,
+  outline: PropTypes.bool,
   name: PropTypes.string,
   onClick: PropTypes.func,
   size: PropTypes.oneOf(['sm', 'md', 'lg']),
