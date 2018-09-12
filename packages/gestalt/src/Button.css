@@ -18,19 +18,22 @@
 }
 
 .outline {
-  border-width: 1.5px;
-  border-style: solid;
-  border-color: var(--blue);
-  background: transparent;
-  
+  border-width: 1.5px !important;
+  border-style: solid !important;
+  border-color: var(--blue) !important;
+  background-color: transparent !important;
 }
 
 .outline * {
-  color: var(--blue);
+  color: var(--blue) !important;
 }
 
-.outline:hover *, .outline:focus *, .outline:active {
-  color: white;
+.outline:hover, .outline:focus, .outline:active {
+  background-color: var(--blue) !important;
+}
+
+.outline:hover *, .outline:focus *, .outline:active * {
+  color: white !important;
 }
 
 .solid {

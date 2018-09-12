@@ -65,7 +65,6 @@ export default function Button(props: Props) {
       aria-label={accessibilityLabel}
       className={classes}
       disabled={disabled}
-      outline={outline}
       name={name}
       onClick={event => onClick && onClick({ event })}
       type={type}
