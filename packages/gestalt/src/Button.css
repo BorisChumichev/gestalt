@@ -8,32 +8,7 @@
 
 .button {
   composes: borderBox from "./Layout.css";
-  border-radius: 0;
-  text-transform: uppercase;
-  font-weight: bold;
-}
-
-.button * {
-  letter-spacing: 1.3px !important;
-}
-
-.outline {
-  border-width: 1.5px !important;
-  border-style: solid !important;
-  border-color: var(--blue) !important;
-  background-color: transparent !important;
-}
-
-.outline * {
-  color: var(--blue) !important;
-}
-
-.outline:hover, .outline:focus, .outline:active {
-  background-color: var(--blue) !important;
-}
-
-.outline:hover *, .outline:focus *, .outline:active * {
-  color: white !important;
+  border-radius: 4px;
 }
 
 .solid {

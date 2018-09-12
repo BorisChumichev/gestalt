@@ -186,7 +186,6 @@ card(
     name="Combinations"
     color={['gray', 'red', 'blue']}
     disabled={[false, true]}
-    outline={[false, true]}
     size={['sm', 'md', 'lg']}
   >
     {(props, i) => (

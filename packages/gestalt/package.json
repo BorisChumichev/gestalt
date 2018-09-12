@@ -1,6 +1,6 @@
 {
   "name": "gestalt-kadr",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "main": "dist/gestalt.js",
   "jsnext:main": "dist/gestalt.es.js",
   "module": "dist/gestalt.es.js",
